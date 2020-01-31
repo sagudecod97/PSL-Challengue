@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Tusavirus</title>
+    <script src="./JS/eventListener.js"></script>
 </head>
 
 <body>
@@ -14,46 +15,50 @@
                 <h2>
                     State: 
                 </h2>
-                <select>
-                    <option value="volvo">Amazonas</option>
-                    <option value="volvo">  Antioquia</option>
-                    <option value="volvo">Arauca</option>
-                    <option value="volvo">Atlántico</option>
-                    <option value="volvo">Bolívar</option>
-                    <option value="volvo">Boyacá</option>
-                    <option value="volvo">Caldas</option>
-                    <option value="volvo">Caquetá</option>
-                    <option value="volvo">Casanare</option>
-                    <option value="volvo">Cauca</option>
-                    <option value="volvo">Cesar</option>
-                    <option value="volvo">Chocó</option>
-                    <option value="volvo">Córdoba</option>
-                    <option value="volvo">Cundinamarca</option>
-                    <option value="volvo">Guainía</option>
-                    <option value="volvo">Guaviare</option>
-                    <option value="volvo">Huila</option>
-                    <option value="volvo">La Guajira</option>
-                    <option value="volvo">Magdalena</option>
-                    <option value="volvo">Meta</option>
-                    <option value="volvo">Nariño</option>
-                    <option value="volvo">Norte de Santander</option>
-                    <option value="volvo">Putumayo</option>
-                    <option value="volvo">Quindío</option>
-                    <option value="volvo">Risaralda</option>
-                    <option value="volvo">San Andrés y Providencia</option>
-                    <option value="volvo">Santander</option>
-                    <option value="volvo">Sucre</option>
-                    <option value="volvo">Tolima</option>
-                    <option value="volvo">Valle del Cauca</option>
-                    <option value="volvo">Vaupés</option>
-                    <option value="volvo">Vichada</option>
+                <select id="state">
+                    <option value="empty"></option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Antioquia"> Antioquia</option>
+                    <option value="Arauca">Arauca</option>
+                    <option value="Atlántico">Atlántico</option>
+                    <option value="Bolívar">Bolívar</option>
+                    <option value="Boyacá">Boyacá</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Caquetá">Caquetá</option>
+                    <option value="Casanare">Casanare</option>
+                    <option value="Cauca">Cauca</option>
+                    <option value="Cesar">Cesar</option>
+                    <option value="Chocó">Chocó</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Cundinamarca">Cundinamarca</option>
+                    <option value="Guainía">Guainía</option>
+                    <option value="Guaviare">Guaviare</option>
+                    <option value="Huila">Huila</option>
+                    <option value="La Guajira">La Guajira</option>
+                    <option value="Magdalena">Magdalena</option>
+                    <option value="Meta">Meta</option>
+                    <option value="Nariño">Nariño</option>
+                    <option value="Norte de Santander">Norte de Santander</option>
+                    <option value="Putumayo">Putumayo</option>
+                    <option value="Quindío">Quindío</option>
+                    <option value="Risaralda">Risaralda</option>
+                    <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                    <option value="Santander">Santander</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Tolima">Tolima</option>
+                    <option value="Valle del Cauca">Valle del Cauca</option>
+                    <option value="Vaupés">Vaupés</option>
+                    <option value="Vichada">Vichada</option>
                 </select>
             </div>
             <div>
                 <h2>
                     Sick people: 
                 </h2>
-                <input type="text">
+                <input id="num_sick" type="text">
+            </div>
+            <div>
+                <button title="Save"></button>
             </div>
         </div>
     </main>
