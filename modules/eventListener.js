@@ -1,5 +1,3 @@
-import checkNumber from "./checkNumber";
-
 window.addEventListener("load", ()=>{
     var stateToll = {
         stateName: "",
@@ -19,14 +17,16 @@ window.addEventListener("load", ()=>{
     let saveClick = document.getElementById("save")
     saveClick.addEventListener("click", ()=>{
         let isNumOk = checkNumber(stateToll.numVictims)
-        if (!isNaN(isNumOk)){
+        if (isNumOk == 1){
             // Made the post
-            console.log(isNumOk)
             document.getElementById("num_sick").value = ""
             console.log(stateToll)
-        } else{
-            alert("Not a number, please use as the examples: 01 or \"eleven\"")
+        } else if(!isNaN(isNumOk)){
+            document.getElementById("num_sick").value = ""
+            stateToll.numVictims = checkNumber(stateToll.numVictims)
+            console.log(stateToll)
+        } else {
+            alert("Not a number, please fix the input.")
         }
     })
-
 })
