@@ -215,6 +215,11 @@ window.addEventListener("load", ()=>{
             // Finds the element that matches the value of the state selected
             let numVictimsState = states.find((elem) => elem.stateName == state)
 
+            if (numVictimsState == undefined){
+                document.getElementById("total-state").innerHTML = "No Records"
+                return;
+            }
+
             // Set the innetHTML as the number of victims of the state
             document.getElementById("total-state").innerHTML = numVictimsState.numVictims
         }
